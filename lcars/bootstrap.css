@@ -892,7 +892,7 @@ body {
   font-family: "Roboto Condensed", Helvetica, Arial, sans-serif;
   font-size: 16px;
   line-height: 1.42857143;
-  color: #888888;
+  color: #cccccc;
   background-color: #000000;
 }
 input,
@@ -2626,7 +2626,7 @@ select[multiple].input-lg {
   display: block;
   margin-top: 5px;
   margin-bottom: 10px;
-  color: #c8c8c8;
+  color: #ffffff;
 }
 @media (min-width: 768px) {
   .form-inline .form-group {
@@ -4439,7 +4439,7 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
 }
 a.label:hover,
 a.label:focus {
-  color: #888888;
+  color: #cccccc;
   text-decoration: none;
   cursor: pointer;
 }
@@ -4593,7 +4593,7 @@ a.thumbnail.active {
 }
 .thumbnail .caption {
   padding: 9px;
-  color: #888888;
+  color: #cccccc;
 }
 .alert {
   padding: 15px;
@@ -6170,6 +6170,9 @@ button.close {
   .hidden-print {
     display: none !important;
   }
+}
+.btn {
+  font-weight: bold;
 }
 body {
   -webkit-font-smoothing: antialiased;

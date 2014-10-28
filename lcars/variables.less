@@ -5,29 +5,35 @@
 
 //== Colors
 //
-//## Gray and brand colors for use across Bootstrap.
 
+// TNG ftw!
+
+@brand-default:         #ccc;
+@brand-primary:         #fc6;
+@brand-success:         #9cf;
+@brand-info:            #ccf;
+@brand-warning:         #fc6;
+@brand-danger:          #f30;
+
+@lcars-body-bg:         #000;
+@lcars-text-color:      @brand-default;
+
+
+//## Gray and brand colors for use across Bootstrap.
 @gray-darker:            darken(#fff, 93.5%);
 @gray-dark:              darken(#fff, 46.7%); // #333
 @gray:                   darken(#fff, 33.5%); // #555
 @gray-light:             darken(#fff, 20%); // #777
 @gray-lighter:           darken(#fff, 13.5%);
 
-@brand-primary:         #ffcc66;
-@brand-success:         #99ccff;
-@brand-info:            #ccccff;
-@brand-warning:         #ffcc66;
-@brand-danger:          #ff3300;
-
-
 //== Scaffolding
 //
 //## Settings for some of the most global styles.
 
 //** Background color for `<body>`.
-@body-bg:               #000;
+@body-bg:               @lcars-body-bg;
 //** Global text color on `<body>`.
-@text-color:            @gray-dark;
+@text-color:            @lcars-text-color;
 
 //** Global textual link color.
 @link-color:            @brand-primary;

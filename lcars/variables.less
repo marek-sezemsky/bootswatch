@@ -7,17 +7,17 @@
 //
 //## Gray and brand colors for use across Bootstrap.
 
-@gray-darker:            darken(#fff, 90%);
-@gray-dark:              darken(#fff, 70%); // #333
+@gray-darker:            darken(#fff, 93.5%);
+@gray-dark:              darken(#fff, 46.7%); // #333
 @gray:                   darken(#fff, 33.5%); // #555
-@gray-light:             darken(#fff, 46.7%); // #777
-@gray-lighter:           darken(#fff, 93.5%);
+@gray-light:             darken(#fff, 20%); // #777
+@gray-lighter:           darken(#fff, 13.5%);
 
-@brand-primary:         #428bca;
-@brand-success:         #5cb85c;
-@brand-info:            #5bc0de;
-@brand-warning:         #f0ad4e;
-@brand-danger:          #d9534f;
+@brand-primary:         #ffcc66;
+@brand-success:         #99ccff;
+@brand-info:            #ccccff;
+@brand-warning:         #ffcc66;
+@brand-danger:          #ff3300;
 
 
 //== Scaffolding
@@ -99,9 +99,9 @@
 @line-height-large:         1.33;
 @line-height-small:         1.5;
 
-@border-radius-base:        4px;
-@border-radius-large:       6px;
-@border-radius-small:       3px;
+@border-radius-base:        0px;
+@border-radius-large:       0px;
+@border-radius-small:       0px;
 
 //** Global color for active items (e.g., navs or dropdowns).
 @component-active-color:    #fff;
@@ -132,7 +132,7 @@
 @table-bg-active:               @table-bg-hover;
 
 //** Border color for table and cell borders.
-@table-border-color:            #ddd;
+//@table-border-color:            #ddd;
 
 
 //== Buttons
@@ -141,27 +141,27 @@
 
 @btn-font-weight:                normal;
 
-@btn-default-color:              #333;
-@btn-default-bg:                 #fff;
-@btn-default-border:             #ccc;
+@btn-default-color:              @gray-darker;
+@btn-default-bg:                 @gray-lighter;
+@btn-default-border:             darken(@body-bg, 5%);
 
-@btn-primary-color:              #fff;
+@btn-primary-color:              @gray-darker;
 @btn-primary-bg:                 @brand-primary;
 @btn-primary-border:             darken(@btn-primary-bg, 5%);
 
-@btn-success-color:              #fff;
+@btn-success-color:              @gray-darker;
 @btn-success-bg:                 @brand-success;
 @btn-success-border:             darken(@btn-success-bg, 5%);
 
-@btn-info-color:                 #fff;
+@btn-info-color:                 @gray-darker;
 @btn-info-bg:                    @brand-info;
 @btn-info-border:                darken(@btn-info-bg, 5%);
 
-@btn-warning-color:              #fff;
+@btn-warning-color:              @gray-darker;
 @btn-warning-bg:                 @brand-warning;
 @btn-warning-border:             darken(@btn-warning-bg, 5%);
 
-@btn-danger-color:               #fff;
+@btn-danger-color:               @gray-darker;
 @btn-danger-bg:                  @brand-danger;
 @btn-danger-border:              darken(@btn-danger-bg, 5%);
 
@@ -557,9 +557,9 @@
 @label-danger-bg:             @brand-danger;
 
 //** Default label text color
-@label-color:                 #fff;
+@label-color:                 @gray-darker;
 //** Default text color of a linked label
-@label-link-hover-color:      #fff;
+@label-link-hover-color:      @text-color;
 
 
 //== Modals
@@ -745,7 +745,7 @@
 //
 //##
 
-@badge-color:                 #fff;
+@badge-color:                 @gray-darker;
 //** Linked badge text color on hover
 @badge-link-hover-color:      #fff;
 @badge-bg:                    @gray-light;
@@ -753,7 +753,7 @@
 //** Badge text color in active nav link
 @badge-active-color:          @link-color;
 //** Badge background color in active nav link
-@badge-active-bg:             #fff;
+@badge-active-bg:             @gray-darker;
 
 @badge-font-weight:           bold;
 @badge-line-height:           1;

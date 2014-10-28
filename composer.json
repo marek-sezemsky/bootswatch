@@ -26,6 +26,7 @@
                 "flatly/*",
                 "fonts/*",
                 "journal/*",
+                "lcars/*",
                 "lumen/*",
                 "paper/*",
                 "readable/*",
